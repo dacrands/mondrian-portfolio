@@ -1,0 +1,11 @@
+$canvas: #e6e9e4;
+$black: #1d1e22;
+body {
+  background: $canvas;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
