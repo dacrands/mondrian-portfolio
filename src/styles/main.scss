@@ -18,13 +18,14 @@ $border: 10px solid $black;
 
 
 body {
+  margin: 0;  
   background: $canvas;
   color: $black;
   font-family: sans-serif;
 }
 
 .btn {
-  text-decoration: none;
+  // text-decoration: none;
   font-weight: bold;  
   text-align: center;
 }

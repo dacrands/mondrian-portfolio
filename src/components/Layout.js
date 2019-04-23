@@ -1,9 +1,5 @@
-import React from "react";
+import React from "react"
 
-import "../styles/main.scss";
+import "../styles/main.scss"
 
-export default ({ children }) => (
-  <div className="container">
-    {children}
-  </div>
-)
+export default ({ children }) => <div className="container">{children}</div>
