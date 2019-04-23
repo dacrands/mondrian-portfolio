@@ -5,8 +5,8 @@ export default () => (
     <div className="canvas">
       <div className="canvas__top">
         <div className="canvas__top-block">
-          <h2>I am David Crandall.</h2>
-          <h2>A full stack web developer.</h2>
+          <h2>I am David Crandall, a full stack web developer.            
+          </h2>
         </div>
         <div className="canvas__top-block" />
       </div>
@@ -16,7 +16,7 @@ export default () => (
           <div className="bottom-grid__block">
             <div className="grid-block--white">
               <h2>
-                I design and build front-end applications, as well as the APIs
+                I build front-end applications and the APIs
                 that power them.
                 <br />
                 <a style={{display: 'inline-block', marginTop: '10px'}} href="">Projects</a>

@@ -48,6 +48,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;   
     grid-template-rows:  337.5px 262.5px;
+    line-height: 180%;
   }
   
   .canvas__top {
@@ -62,12 +63,7 @@ body {
       background: $red;
       color: $canvas;
       border-right: $border;
-      padding: 1em;
-      padding-top: 35px;
-    }
-    h2 {
-      margin: 0;
-      margin-bottom: 10px;
+      padding: 1em;      
     }
   }
 
@@ -129,7 +125,7 @@ body {
     grid-area: w;
     border-bottom: $border;
     padding: 1em;
-    line-height: 180%;
+    
   } 
 
   .grid-block--yellow {
@@ -159,7 +155,7 @@ body {
       grid-template-columns: 76.25% 23.75%;
     }
     .canvas__bottom {
-      grid-template-columns: 23.75% 76.25%;
+      grid-template-columns: 13.75% 86.25%;
     }
   }
 
