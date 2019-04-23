@@ -9,11 +9,9 @@ $blue: #004692;
 $blue-dark: #0d3b6d;
 
 $border: 10px solid $black;
+$border-thin: 7px solid $black;
 
-%grid-columns {
-  display: grid;
-  grid-template-columns: 43.75% 56.25%;
-}
+
 
 
 
@@ -44,6 +42,10 @@ body {
 
 // Composition No. III, with Red, Blue, Yellow, and Black (1929)
 .comp__three {
+  %grid-columns {
+    display: grid;
+    grid-template-columns: 43.75% 56.25%;
+  }
   .canvas {
     display: grid;
     grid-template-columns: 1fr;   
@@ -64,6 +66,9 @@ body {
       color: $canvas;
       border-right: $border;
       padding: 1em;      
+      a {
+        color: $canvas;
+      }
     }
   }
 
@@ -125,7 +130,9 @@ body {
     grid-area: w;
     border-bottom: $border;
     padding: 1em;
-    
+    a {
+      color: $black;
+    }
   } 
 
   .grid-block--yellow {
@@ -152,11 +159,78 @@ body {
 
   @media(max-width: 430px){
     .canvas__top {
-      grid-template-columns: 76.25% 23.75%;
+      grid-template-columns: 86.25% 13.75%;
     }
     .canvas__bottom {
       grid-template-columns: 13.75% 86.25%;
     }
   }
+}
 
+
+.comp__c {
+  // outline: 1px solid purple;
+  %grid-columns {
+    display: grid;
+    grid-template-columns: 46.5% 53.5%;
+  }
+  .canvas {
+    // outline: 3px dashed orange;
+    display: grid;    
+    grid-template-rows: 275px 125px 225px;
+  }
+  .canvas__top {
+    // outline: 3px dashed blue;
+    @extend %grid-columns;
+    // grid-template-columns: 46.5% 53.5%; 
+    border-bottom: $border;
+           
+  }
+  .canvas__top-block {
+    // outline: 3px dashed lime;
+    &:first-of-type {
+      padding: 1em;
+      background: $red;
+      color: $canvas;
+      border-right: $border-thin;
+    }
+  }
+
+  .canvas__mid {
+    // outline: 1px solid lime;
+    @extend %grid-columns;
+    border-bottom: $border;
+  }
+
+  .canvas__mid-block {
+    &:first-of-type {
+      border-right: $border-thin;
+    }
+  }
+
+  .canvas__bottom {
+    // outline: 1px solid lime;
+    display: grid;    
+    grid-template-columns: 10.1% 35.5% 29% 24%;    
+  }
+
+  .canvas__bottom-block {
+    // outline: 2px dashed rebeccapurple;    
+  }
+  .canvas__bottom-grid {
+    border-left: $border-thin;
+    border-right: $border-thin;
+    display: grid;
+    grid-template-rows: 1fr 40px;
+  }
+  .bottom-grid__block {
+    &:first-of-type {
+      border-bottom: $border-thin;
+      background: $blue;
+    }
+  }
+  .yellow {
+    background: $yellow;
+    border-right: $border-thin; 
+  }
 }
