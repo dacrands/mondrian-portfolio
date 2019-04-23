@@ -34,10 +34,18 @@ body {
   margin: 0 auto;
 }
 
+.list {
+  // padding-left: 20px;
+  padding: 0;
+  list-style: none;
+  li {
+    line-height: 150%;
+  }
+}
+
 
 // ========
 // each comp has a canvas
-// comp has no styles
 // ========
 
 // Composition No. III, with Red, Blue, Yellow, and Black (1929)
@@ -77,7 +85,7 @@ body {
   }
   
   .canvas__bottom-block {    
-    border-right: $border;
+    border-right: $border;    
   }
   .canvas__bottom-grid {
     display: grid;
@@ -157,7 +165,7 @@ body {
     }
   }
 
-  @media(max-width: 430px){
+  @media(max-width: 500px){
     .canvas__top {
       grid-template-columns: 86.25% 13.75%;
     }
@@ -175,6 +183,7 @@ body {
     grid-template-columns: 46.5% 53.5%;
   }
   .canvas {
+    border-top: $border;
     // outline: 3px dashed orange;
     display: grid;    
     grid-template-rows: 275px 125px 225px;
@@ -188,21 +197,30 @@ body {
   }
   .canvas__top-block {
     // outline: 3px dashed lime;
-    &:first-of-type {
-      padding: 1em;
+    padding: 1em;
+    &:first-of-type {      
       background: $red;
       color: $canvas;
       border-right: $border-thin;
+      // display: flex;
+      // align-items: flex-end;
+      a {
+        color: $canvas;
+      }
     }
   }
 
   .canvas__mid {
-    // outline: 1px solid lime;
+    // outline: 1px solid lime;        ;
     @extend %grid-columns;
     border-bottom: $border;
   }
 
   .canvas__mid-block {
+    padding: 1em;
+    p {
+      margin: 0;
+    }
     &:first-of-type {
       border-right: $border-thin;
     }
@@ -212,10 +230,14 @@ body {
     // outline: 1px solid lime;
     display: grid;    
     grid-template-columns: 10.1% 35.5% 29% 24%;    
+    h3 {
+      margin: 0;
+    }
   }
 
   .canvas__bottom-block {
     // outline: 2px dashed rebeccapurple;    
+    padding: 1em;
   }
   .canvas__bottom-grid {
     border-left: $border-thin;
@@ -227,10 +249,18 @@ body {
     &:first-of-type {
       border-bottom: $border-thin;
       background: $blue;
+      color: $canvas;
+      padding: .5em;
     }
   }
   .yellow {
     background: $yellow;
     border-right: $border-thin; 
+  }
+
+  @media(max-width: 500px) {
+    .canvas__top {
+      grid-template-columns: 88.25% 1fr;
+    }
   }
 }
