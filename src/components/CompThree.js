@@ -1,11 +1,19 @@
 import React from "react"
+import  { Link } from "gatsby";
 
 export default () => (
   <section className="comp__three">
     <div className="canvas">
       <div className="canvas__top">
         <div className="canvas__top-block">
-          <h2>I am David Crandall, a full stack web developer.            
+          {/* br's, I know, but this is actually a decent use case */}
+          <h2>
+            David Crandall
+            <br/>
+            full stack 
+            <br/>
+            web developer.
+            <br/>            
           </h2>
         </div>
         <div className="canvas__top-block" />
@@ -19,7 +27,7 @@ export default () => (
                 I build front-end applications and the APIs
                 that power them.
                 <br />
-                <a style={{display: 'inline-block', marginTop: '10px'}} href="">Projects</a>
+                <Link style={{display: 'inline-block', marginTop: '10px'}} to="/about">Projects</Link>
               </h2>
             </div>
             <div className="grid-block--yellow">
