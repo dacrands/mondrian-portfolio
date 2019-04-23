@@ -146,4 +146,13 @@ body {
     }
   }
 
+  @media(max-width: 430px){
+    .canvas__top {
+      grid-template-columns: 76.25% 23.75%;
+    }
+    .canvas__bottom {
+      grid-template-columns: 23.75% 76.25%;
+    }
+  }
+
 }
