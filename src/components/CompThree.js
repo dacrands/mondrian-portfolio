@@ -25,9 +25,7 @@ export default () => (
             <div className="grid-block--white">
               <h2>
                 I build front-end applications and the APIs
-                that power them.
-                <br />
-                <Link style={{display: 'inline-block', marginTop: '10px'}} to="/about">Projects</Link>
+                that power them.                                
               </h2>
             </div>
             <div className="grid-block--yellow">
