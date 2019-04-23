@@ -246,12 +246,12 @@ body {
     grid-template-rows: 1fr 40px;
   }
   .bottom-grid__block {
-    &:first-of-type {
-      border-bottom: $border-thin;
-      background: $blue;
-      color: $canvas;
-      padding: .5em;
-    }
+  }
+  .blue {
+    border-bottom: $border-thin;
+    background: $blue;
+    color: $canvas;
+    padding: .5em;
   }
   .yellow {
     background: $yellow;
@@ -261,6 +261,22 @@ body {
   @media(max-width: 500px) {
     .canvas__top {
       grid-template-columns: 88.25% 1fr;
+    }
+    .canvas__bottom {
+      grid-template-columns: 1fr;
+    }
+    .canvas__bottom-grid {
+      grid-template-rows: 40px 1fr;
+      border: none;
+      border-top: $border-thin;
+      border-bottom: $border-thin;
+    }  
+    .yellow {
+      border: none;
+      border-bottom: $border-thin;
+    }
+    .blue {
+      border: none;
     }
   }
 }

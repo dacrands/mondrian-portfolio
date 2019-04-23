@@ -41,7 +41,7 @@ export default () => (
           </ul>
         </div>
         <div className="canvas__bottom-grid">
-          <div className="bottom-grid__block"></div>
+          <div className="bottom-grid__block blue"></div>
           <div className="bottom-grid__block"></div>
         </div>
         <div className="canvas__bottom-block">
