@@ -5,30 +5,48 @@ export default () => (
     <div className="canvas">
       <div className="canvas__top">
         <div className="canvas__top-block">
-        <h2>I am David Crandall, a full stack web developer.</h2>
+          <h2>I am David Crandall, a full stack web developer.</h2>
         </div>
-        <div className="canvas__top-block"></div>
+        <div className="canvas__top-block" />
       </div>
       <div className="canvas__bottom">
-        <div className="canvas__bottom-block"></div>
+        <div className="canvas__bottom-block" />
         <div className="canvas__bottom-grid">
           <div className="bottom-grid__block">
             <div className="grid-block--white">
-            <h2>
+              <h2>
                 I design and build front-end applications, as well as the APIs
-                that power them. <a href="">Projects</a>
+                that power them.
+                <br />
+                <a href="">Projects</a>
               </h2>
-              </div>
+            </div>
             <div className="grid-block--yellow">
-              <a className="btn" href="">Blog</a>
+              <a
+                className="btn"
+                href="https://dacrands.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blog
+              </a>
             </div>
             <div className="grid-block--black">
-              <a className="btn" href="">Email me</a>
-            </div>            
+              <a className="btn" href="mailto:davecrands@gmail.com">
+                Email me
+              </a>
+            </div>
           </div>
           <div className="bottom-grid__block">
-              <a className="btn" href=""><span>Github</span></a>            
-            </div>
+            <a
+              className="btn"
+              href="https://github.com/dacrands"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Github</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
